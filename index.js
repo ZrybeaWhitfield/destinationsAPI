@@ -2,13 +2,13 @@ const {destinations} = require("./db.js")
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 app.use(express.json())
 app.use(express.static('public'))
 app.use(bodyParser.json())
-app.listen(process.env.PORT || PORT, () => {
-  console.log(`App is running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`App is running on port ${PORT}`);
 })
 
 app.get('/', (req, res) =>{
