@@ -1,5 +1,5 @@
 # Destinations API
 
-## Hosted on Heroku
+### Hosted on Heroku
 
-	[destination api](https://z-destination-api.herokuapp.com/)
+https://z-destination-api.herokuapp.com/
