@@ -13,9 +13,9 @@ app.listen(PORT, () => {
   console.log(`App is running on port ${PORT}`);
 })
 
-app.get('/', (req, res) =>{
-  res.render("index.ejs")
-})
+// app.get('/', (req, res) =>{
+//   res.render("index.ejs")
+// })
 
 
 //tester page
