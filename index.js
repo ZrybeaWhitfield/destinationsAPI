@@ -2,12 +2,12 @@ const {destinations} = require("./db.js")
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 4000
+const PORT = 4000
 
 app.use(express.json())
 app.use(express.static('public'))
 app.use(bodyParser.json())
-app.listen(port, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`App is running on port ${port}`);
 })
 
@@ -31,7 +31,7 @@ app.post('/destinations', (req, res) =>{
   }
 
   const dest = {destinationName, location}
-  // 
+  //
   // if(photo && photo.length !== 0){
   //   dest.photo = photo
   // }
